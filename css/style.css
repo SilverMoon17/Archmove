@@ -1,0 +1,323 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('../fonts/SFUIDisplay-Regular.eot');
+    src:
+        url('../fonts/SFUIDisplay-Regular.eot') format('embedded-opentype'),
+        url('../fonts/SFUIDisplay-Regular.woff2') format('woff2'),
+        url('../fonts/SFUIDisplay-Regular.woff') format('woff'),
+        url('../fonts/SFUIDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('../fonts/SFUIDisplay-Semibold.eot');
+    src:
+        url('../fonts/SFUIDisplay-Semibold.eot') format('embedded-opentype'),
+        url('../fonts/SFUIDisplay-Semibold.woff2') format('woff2'),
+        url('../fonts/SFUIDisplay-Semibold.woff') format('woff'),
+        url('../fonts/SFUIDisplay-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('../fonts/SFUIDisplay-Bold.eot');
+    src:
+        url('../fonts/SFUIDisplay-Bold.eot') format('embedded-opentype'),
+        url('../fonts/SFUIDisplay-Bold.woff2') format('woff2'),
+        url('../fonts/SFUIDisplay-Bold.woff') format('woff'),
+        url('../fonts/SFUIDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('../fonts/SFUIDisplay-Light.eot');
+    src:
+        url('../fonts/SFUIDisplay-Light.eot') format('embedded-opentype'),
+        url('../fonts/SFUIDisplay-Light.woff2') format('woff2'),
+        url('../fonts/SFUIDisplay-Light.woff') format('woff'),
+        url('../fonts/SFUIDisplay-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'New York Extra Large';
+    src: url('../fonts/NewYorkExtraLarge-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+.header-items {
+    display: flex;
+    align-items: center;
+    max-width: 1440px;
+    margin: auto;
+    justify-content: space-between;
+}
+.nav {
+    display: flex;
+    align-items: center;
+}
+.navigation {
+    display: flex;
+}
+.navigation-link {
+    font-family: 'SF UI Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #585858;
+    padding: 4px 24px;
+}
+.header-buttons {
+    display: flex;
+    align-items: center;
+}
+.btn {
+    border: none;
+    background: transparent 0;
+    outline: none;
+    cursor: pointer;
+}
+.sign-in-btn {
+    padding: 4px 24px;
+    font-family: 'SF UI Display', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #585858;
+    margin-left: 26px;
+}
+.sign-up-btn {
+    padding: 4px 24px;
+    background: #FD665E;
+    border-radius: 4px;
+    font-family: 'SF UI Display', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+    margin-left: 16px;
+}
+.container {
+    max-width: 1440px;
+    margin: auto;
+    display: block;
+    margin: 0 auto;
+}
+.container>* {
+    margin-left: 165px;
+    margin-right: 165px;
+}
+.section-1-title {
+    font-family: 'New York Extra Large', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 112px;
+    line-height: 100%;
+    letter-spacing: -0.04em;
+    color: #000000;
+    max-width: 870px;
+    margin-bottom: 56px;
+}
+.red {
+    color: #FD665E;
+}
+.section-1-text {
+    font-family: 'SF UI Display', sans-serif;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #000000;
+    max-width: 290px;
+    margin-top: 0;
+    margin-bottom: 48px;
+    margin-right: 80px;
+}
+.section-button {
+    background: #FD665E;
+    border-radius: 4px;
+    padding: 8px 32px;
+    font-family: SF UI Display;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+.section-2-title {
+    font-family: 'New York Extra Large', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 124%;
+    letter-spacing: -0.04em;
+    color: #000000;
+    max-width: 535px;
+    margin: auto;
+    margin-top: 64px;
+}
+.slider-button-prev,.slider-button-next {
+    /* border: solid 1px black; */
+    padding: 14px 15px;
+}
+.slider-button-prev>img,.slider-button-next>img {
+    vertical-align: middle;
+}
+.active {
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 4px;
+}
+.swiper-container {
+    margin-bottom: 128px;
+}
+.swiper-wrapper {
+    margin-top: 40px;
+}
+.swiper-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.section-3-title {
+    font-family: 'New York Extra Large', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 124%;
+    letter-spacing: -0.04em;
+    color: #000000;
+    max-width: 459px;
+    margin-top: 0;
+}
+.section-3 {
+    display: flex;
+}
+.features {
+    margin-top: 202px;
+    margin-left: 155px;
+}
+.feature:not(:last-child) {
+    margin-bottom: 48px;
+}
+.feature-1::before {
+    display: flex;
+    content:url('../img/feature-1-img.svg');
+}
+.feature-2::before {
+    display: flex;
+    content:url('../img/feature-2-img.svg');
+}
+.feature-3::before {
+    display: flex;
+    content:url('../img/feature-3-img.svg');
+}
+
+.feature {
+    display: flex;
+}
+.feature-img {
+    vertical-align: top;
+}
+.feature-info {
+    margin-left: 38px;
+}
+.feature-title {
+    margin: 0;
+    font-family: 'SF UI Display', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+.feature-text {
+    margin: 0;
+    font-family: 'SF UI Display', sans-serif;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    margin-top: 8px;
+}
+.feature-btn {
+    margin-top: 72px;
+    text-align: center;
+}
+.section-4 {
+    background: linear-gradient(180deg, #F9F9F9 22.12%, rgba(249, 249, 249, 0) 100%);
+    padding-top: 64px;
+    margin-top: 64px;
+}
+.section-4-title {
+    font-family: 'New York Extra Large', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 124%;
+    letter-spacing: -0.04em;
+    color: #000000;
+    max-width: 374px;
+    margin-top: 0;
+}
+.quotes-block {
+    max-width: 765px;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    position: absolute;
+}
+.quote-text {
+    font-family: 'SF UI Display', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #000000;
+    margin-top: 0;
+}
+.quote-author {
+    font-family: 'SF UI Display', sans-serif;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+.quotes-block::before {
+    content: url('../img/quotes.svg');
+    margin-right: 30px;
+    position: absolute;
+    left: -100px;
+}

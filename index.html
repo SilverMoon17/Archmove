@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <header>
+        <div class="header-items">
+            <nav class="nav">
+                <a href="/" class="logo"><img src="img/logo.svg" alt=""></a>
+                <ul class="navigation">
+                    <li class="navigation-item"><a href="/" class="navigation-link">Design Gallery</a></li>
+                    <li class="navigation-item"><a href="/" class="navigation-link">List of Architect</a></li>
+                    <li class="navigation-item"><a href="/" class="navigation-link">Articles</a></li>
+                    <li class="navigation-item"><a href="/" class="navigation-link">How it Works</a></li>
+                </ul>
+            </nav>
+            <div class="header-buttons">
+                <button class="btn search-button"><img src="img/search.svg" alt=""></button>
+                <button class="btn sign-in-btn">Sign In</button>
+                <button class="btn sign-up-btn">Sign Up</button>
+            </div>
+        </div>
+    </header>
+    <!-- /.header -->
+    <main>
+        <div class="container">
+            <section class = "section-1">
+                <h1 class="section-1-title">Build Your Dream <span class="section-1-title red"> House</span></h1>
+                <div style="display:flex;">
+                    <div class="section-info">
+                        <p class="section-1-text">The first and most trusted marketplace of design & build house in The World. 
+                        100% guaranteed Build safe, comfortable and transparent with a project management for the best result</p>
+                        <button class="btn section-button">Free Consultation</button>
+                    </div>
+                    <img width="74%" height="50%" class="section-1-img" src="img/img-1.png" alt="">
+                </div>
+            </section>
+            <section class="section-2">
+                <div class="swiper-container">
+                    <div style="display: flex;">
+                        <h1 class = "section-2-title">Build professional valuable room for you</h1>
+                        <div style="margin-top: 129px;">
+                            <button class="btn slider-button-prev"><img src="img/prev.svg" alt=""></button>
+                            <button class="btn slider-button-next active"><img src="img/next.svg" alt=""></button>
+                    </div>
+                    </div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img class="swiper-img" src="img/img-01.png" alt=""></div>
+                            <div class="swiper-slide"><img class="swiper-img" src="img/img-02.png" alt=""></div>
+                            <div class="swiper-slide"><img class="swiper-img" src="img/img-03.png" alt=""></div>
+                            <div class="swiper-slide"><img class="swiper-img" src="img/img-04.png" alt=""></div>
+                            <div class="swiper-slide"><img class="swiper-img" src="img/img-01.png" alt=""></div>
+                            <div class="swiper-slide"><img class="swiper-img" src="img/img-02.png" alt=""></div>
+                            <div class="swiper-slide"><img class="swiper-img" src="img/img-03.png" alt=""></div>
+                            <div class="swiper-slide"><img class="swiper-img" src="img/img-04.png" alt=""></div>
+                        </div>
+                        <!-- /.swiper-wrapper -->
+                    </div>
+                <!-- /.swiper-container -->
+            </section>
+            <section class="section-3">
+                <div>
+                    <h2 class="section-3-title">Build your needs with Archmove</h2>
+                    <img src="img/section-3-img.png" alt="" class="section-3-img">
+                </div>
+                <div class = "features">
+                    <div class="feature feature-1">
+                        <div class="feature-info">
+                            <h4 class="feature-title">100% guaranteed project completion</h4>
+                            <p class="feature-text">Build safe, comfortable and transparent with a project management application with a joint account.</p>
+                        </div>
+                    </div>
+                    <div class="feature feature-2">
+                        <div class="feature-info">
+                            <h4 class="feature-title">No additional fees</h4>
+                            <p class="feature-text">There are no hidden costs. The value of the offer you get is the value you paid.</p>
+                        </div>
+                    </div>
+                    <div class="feature feature-3">
+                        <div class="feature-info">
+                            <h4 class="feature-title">Get escort from the Team</h4>
+                            <p class="feature-text">Monitor reports from the Arsitag team who check directly in the field.</p>
+                        </div>
+                    </div>
+                    <div class="feature-btn"><button class="btn section-button ">Free Consultation</button></div>
+                </div>
+            </section>
+        </div>
+        <section class="section-4">
+            <div class="container">
+                <h2 class="section-4-title">Sound Too Good To Be True?</h2>
+                <div class="quotes-block">
+                    <p class="quote-text">We just wanted to thank you for this fantastic website! We are so grateful for 
+                        being able to advertise our Petite cabin and receive feedback from people from all over the U.S. 
+                        and even further.</p>
+                    <div style="display: flex; justify-content: space-between;">
+                        <div class="quote-author"><p><span style="font-weight: bold;">Adam Morph</span> — CEO Alfatech</p></div>
+                        <div>
+                            <button class="btn slider-button-prev"><img src="img/prev.svg" alt=""></button>
+                            <button class="btn slider-button-next active"><img src="img/next.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+         var swiper = new Swiper('.swiper-container', {
+             slidesPerView: 3.5,
+             spaceBetween:40,
+             navigation: {
+                nextEl: '.slider-button-next',
+                prevEl: '.slider-button-prev',
+            },
+    });
+    </script>
+</body>
+</html>
