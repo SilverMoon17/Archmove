@@ -121,9 +121,8 @@ ul {
 }
 .container {
     max-width: 1440px;
-    margin: auto;
-    display: block;
     margin: 0 auto;
+    display: block;
 }
 .container>* {
     margin-left: 165px;
@@ -320,4 +319,19 @@ ul {
     margin-right: 30px;
     position: absolute;
     left: -100px;
+}
+@media(max-width: 800px) {
+    .container {
+        max-width: 100%;
+        margin: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .container>* {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .header-items {
+        max-width: 100%;
+    }
 }
